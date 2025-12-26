@@ -26,12 +26,26 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
+```
+    height = float(request.POST.get("height"))
+    weight = float(request.POST.get("weight"))
+    bmi = weight / (height * height)
 
+    # Print to server console for debugging
+    print("Height:", height)
+    print("Weight:", weight)
+    print("BMI calculated:", bmi)
+
+return render(request, "bmiapp/template.html", {"BMI": bmi})
+```
 
 ## SERVER SIDE PROCESSING:
+<img width="1022" height="526" alt="image" src="https://github.com/user-attachments/assets/e5b7bf57-8197-4814-b614-d954452fa39d" />
 
 
 ## HOMEPAGE:
+<img width="1029" height="529" alt="image" src="https://github.com/user-attachments/assets/68179983-0016-4c03-8f1f-388a81f5005c" />
+
 
 
 ## RESULT:
